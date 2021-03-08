@@ -57,6 +57,11 @@ body {
   margin: 0 auto;
 }
 
+.bgMain {
+  background: #1f2235;
+}
+/*Grid System*/
+
 .row {
   display: flex;
   width: 100%;
@@ -67,6 +72,9 @@ body {
   width: 50%;
 }
 
+.col-4 {
+  width: 33.33333333333333%;
+}
 /* header */
 .header__content {
   display: flex;
@@ -139,6 +147,68 @@ body {
 .banner__img{
   padding: 0 30px;
   margin-top: 150px;
+}
+
+/*Services*/
+
+.services {
+  background: #1f2235;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.common {
+  width: 33.33333333333333%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #ff4a57;
+  font-size: 16px;
+}
+
+.mainHeader {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.mainContent {
+  font-size: 16px;
+  color: #dfdfdf;
+}
+
+.commonBorder {
+  background-color: #ff4a57;
+  height: 3px;
+  width: 100px;
+  margin: 30px auto;
+}
+
+.services__box {
+  padding: 40px;
+  background: #23263a;
+  color: #fff;
+}
+
+.commonIcons 
+{
+  font-size: 40px;
+  color: #ff4a57;
+  margin-bottom: 15px;
+}
+
+.services__box-header {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services__box-p {
+  font-size: 14px;
+  color: #dfdfdf;
 }
 
 .toggle {

@@ -3,6 +3,11 @@ import { FaFacebookF, FaTwitter, FaPinterest, FaInstagram, FaPlay } from "react-
 import photome from '../images/man-01.png'; // Tell webpack this JS file uses this image
 
 const Banner = () => {
+    const [state] = React.useState({
+        title: 'I am Jonathan Doe',
+        text: " I'm Jonathan, professional web developper with long time \
+        experience in this field",
+    });
     return <header className="header">
         <div className="container">
             <div className="row">
@@ -23,11 +28,8 @@ const Banner = () => {
                                     <FaInstagram />
                                 </li>
                             </ul>
-                            <h1>I am Jonathan Doe</h1>
-                            <p>
-                                I'm Jonathan, professional web developper with long time
-                                experience in this field
-                            </p>
+                            <h1>{state.title}</h1>
+                            <p>{state.text}</p>
                             <div className="header__buttons">
                                 <a href="" className="btn btn-outline">
                                     My Portfolio
