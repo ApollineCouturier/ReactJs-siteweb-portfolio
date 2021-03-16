@@ -1,24 +1,20 @@
 import React from "react";
-import aboutMePhoto from '../images/man-01.png'; // Tell webpack this JS file uses this image
+import aboutMePhoto from '../images/circleapo.png'; // Tell webpack this JS file uses this image
 
 const About = () => {
   const [header] = React.useState({
-    subHeader: "About Me",
-    text:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.",
+    subHeader: "Sur moi",
   });
   const [state] = React.useState([
-    { id: 1, title: "Name:", text: "Jonathan Doe" },
-    { id: 2, title: "Email:", text: "example@domain.com" },
-    { id: 3, title: "Phone:", text: "+1 023 454 345" },
-    { id: 4, title: "Linkedin", text: "Jonathan_123" },
+    { id: 1, title: "Nom:", text: "Apolline Couturier Gauducheau" },
+    { id: 2, title: "Email:", text: "apolline.couturier-gauducheau@epitech.eu" },
+    { id: 3, title: "Téléphone:", text: "+336 59 28 13 16" },
   ]);
   return (
     <div className="about">
       <div className="container">
         <div className="common">
           <h1 className="mainHeader">{header.subHeader}</h1>
-          <p className="mainContent">{header.text}</p>
           <div className="commonBorder"></div>
         </div>
         <div className="row  h-650 alignCenter">
@@ -29,15 +25,18 @@ const About = () => {
           </div>
           <div className="col-6">
             <div className="about__info">
-              <h1>Hi There</h1>
               <div className="about__info-p1">
-                In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui
-                at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id
-                efficitur sagittis, urna est ultricies eros, ac porta sem turpis
+                  Je suis étudiante en programmation informatique à l’école Epitech Bordeaux. Je suis en 3eme année<br/>
+                  Ma formation initiale (bac littéraire) ne me prédestinait pas vers cette orientation.<br/>
+                  J’ai choisi cette voie par passion, car dès l’enfance je rêvais déjà de devenir développeuse.<br/>
+                  « combattu souvent, battu parfois, abattu jamais », pourrait être ma devise<br/>
+                  Aujourd’hui je me sens à l’aise dans cet univers.<br/>
               </div>
               <div className="about__info-p2">
-                nunc id efficitur sagittis, urna est ultricies eros, ac porta
-                sem turpis porta sem turpis quis leo. Nulla in feugiat elit
+                  J’aime travailler en groupe et je continue parallèlement à m’investir individuellement à la découverte de nouveaux langages.<br/>
+                  J’aime apprendre et je suis toujours aussi passionnée.<br/>
+                  Mon objectif est de travailler dans le développement de logiciels, de sites web et d’applications mobiles.<br/>
+                  Je suis à la recherche d’un stage de 4 à 5 mois mois d’Avril à Août.  (libre le 29 mars)<br/>
               </div>
               <div className="info__contacts">
                 <div className="row">

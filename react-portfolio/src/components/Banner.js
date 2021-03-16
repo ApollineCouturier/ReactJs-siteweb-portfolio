@@ -1,12 +1,11 @@
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaPinterest, FaInstagram, FaPlay } from "react-icons/fa"
-import photome from '../images/man-01.png'; // Tell webpack this JS file uses this image
+import photome from '../images/apoaboutbg.png'; // Tell webpack this JS file uses this image
 
 const Banner = () => {
     const [state] = React.useState({
-        title: 'I am Jonathan Doe',
-        text: " I'm Jonathan, professional web developper with long time \
-        experience in this field",
+        title: 'Apolline Couturier Gauducheau',
+        text: "Etudiante Développeuse",
     });
     return <header className="header">
         <div className="container">
@@ -32,7 +31,7 @@ const Banner = () => {
                             <p>{state.text}</p>
                             <div className="header__buttons">
                                 <a href="" className="btn btn-outline">
-                                    My Portfolio
+                                    Portfolio
                                 </a>
                                 &nbsp;&nbsp;&nbsp;
                                 <a href="" className="btn btn-smart">
