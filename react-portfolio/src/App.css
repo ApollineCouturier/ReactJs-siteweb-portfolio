@@ -3,7 +3,35 @@
   height: 100vh;
   background-color: #191D2B;
   position: fixed;
+  z-index: 11;
   border-right: 1px solid #2e344e;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+@media screen and (max-width: 1000px) {
+  .App .sidebar {
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .App .sidebar {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .App .nav-toggle {
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .App .main-content {
@@ -15,6 +43,83 @@
   display: -ms-grid;
   display: grid;
   position: relative;
+}
+
+.App .main-content .content {
+  margin: 5rem 15rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .App .main-content .content {
+    margin: 2rem 10rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .App .main-content .content {
+    margin: 3rem 10rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .App .main-content .content {
+    margin: 3rem 10rem;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .App .main-content .content {
+    margin: 2rem 3rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .App .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.nav-btn {
+  position: absolute;
+  z-index: 10;
+  right: 10%;
+  top: 5%;
+  width: 4rem;
+  height: 4rem;
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav-btn .lines-1, .nav-btn .lines-2, .nav-btn .lines-3 {
+  height: .4rem;
+  width: 100%;
+  background-color: #3858cc;
+  pointer-events: none;
+  display: none;
+  border-radius: 20px;
+}
+
+.nav-btn .lines-1:not(:last-child), .nav-btn .lines-2:not(:last-child), .nav-btn .lines-3:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-btn {
+    display: block;
+  }
+  .nav-btn .lines-1, .nav-btn .lines-2, .nav-btn .lines-3 {
+    display: block;
+  }
 }
 
 .NavBar {
@@ -132,6 +237,42 @@
   text-align: center;
 }
 
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.5rem 0;
+}
+
+.icons .icon-holder {
+  margin-right: 1rem;
+}
+
+.icons .icon-holder .icon {
+  font-size: 2.8rem;
+  color: #a4acc4;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.icons .icon-holder .fb:hover {
+  color: blue;
+}
+
+.icons .icon-holder .gh:hover {
+  color: rgba(212, 45, 212, 0.788);
+}
+
+.icons .icon-holder .yt:hover {
+  color: red;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -139,9 +280,47 @@
           box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0056d898;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #777;
+}
+
 body {
   color: #a4acc4;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 1.2rem;
+}
+
+span {
+  color: #037FFF;
+}
+
+@media screen and (max-width: 411px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 70%;
+  }
+  h3 {
+    font-size: 70%;
+  }
 }
 /*# sourceMappingURL=App.css.map */
