@@ -1,5 +1,5 @@
 import React from 'react';
-import {faFacebook} from '@fortawesome/free-brands-svg-icons';
+import {faCodepen, faFacebook, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import {faYoutube} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,25 +10,28 @@ function HomePage() {
         <div className="HomePage">
             <header className="hero">
                 <h1 className="hero-text">
-                    Hi, I am 
-                    <span> Lorem Ipsum.</span>
+                    Bienvenue, Je suis<br />
+                    <span> Apolline Couturier Gauducheau</span>
                 </h1>
                 <p className="h-sub-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Cupiditate facere, numquam vitae placeat consequatur corrupti officia 
-                    quibusdam. Blanditiis doloremque nemo ex facilis neque. 
-                    A sint ipsam earum nemo omnis et.
+                    Bienvenue sur mon site web,<br />
+                    Je suis étudiante en 3ème année à epitech<br />
+                    Je suis à la recherche d'un stage de 4-5 mois d'Avril à Août (libre le 29 mars)<br />
+                    Mon objectif est de travailler dans le développement de logiciels, de sites web et d’applications mobiles.<br />
                 </p>
                 <div className="icons">
-                    <Link to="test" className="icon-holder">
-                        <FontAwesomeIcon icon={faFacebook} className="icon fb" />
+                    <Link to="#" className="icon-holder">
+                        <FontAwesomeIcon icon={faInstagram} className="icon insta" />
                     </Link>
-                    <Link to="test" className="icon-holder">
+                    <a href="https://github.com/ApollineCouturier" target="_blank" className="icon-holder">
                         <FontAwesomeIcon icon={faGithub} className="icon gh" />
-                    </Link>
-                    <Link to="test" className="icon-holder">
-                        <FontAwesomeIcon icon={faYoutube} className="icon yt"/>
-                    </Link>
+                    </a>
+                    <a href="https://codepen.io/apollinecouturier/" className="icon-holder">
+                        <FontAwesomeIcon icon={faCodepen} className="icon cp"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/apolline-couturier-gauducheau-298572180/" className="icon-holder">
+                        <FontAwesomeIcon icon={faLinkedin} className="icon link"/>
+                    </a>
                 </div>
             </header>
         </div>

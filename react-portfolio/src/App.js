@@ -3,6 +3,9 @@ import NavBar from './Components/NavBar'
 import HomePage from './Pages/HomePage';
 import {Switch, Route} from 'react-router-dom';
 import AboutPage from './Pages/AboutPage';
+import PortfoliosPage from './Pages/PortfoliosPage';
+import BlogsPage from './Pages/BlogsPage';
+import ContactPage from './Pages/ContactPage';
 
 function App() {
   return (
@@ -19,8 +22,16 @@ function App() {
             <Route path="/about" exact>
               <AboutPage />
             </Route>
+            <Route path="/portfolios" exact>
+              <PortfoliosPage />
+            </Route>
+            <Route path="/blogs" exact>
+              <BlogsPage />
+            </Route>
+            <Route path="/contact" exact>
+              <ContactPage />
+            </Route>
           </Switch>
-          <HomePage />
         </div>
       </div>
     </div>

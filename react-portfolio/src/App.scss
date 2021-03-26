@@ -1,6 +1,11 @@
 @import './styles/layout';
 @import './styles/navbar';
 @import './styles/typography';
+@import './styles/title';
+@import './styles/about';
+@import './styles/skills';
+@import './styles/services';
+
 
 
 *{
@@ -20,7 +25,7 @@ body::-webkit-scrollbar-track{
 }
 
 body{
-    color: #a4acc4;
+    color: #ffffff;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 1.2rem;
 }
