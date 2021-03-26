@@ -389,7 +389,7 @@
   }
   .ImageSection .about-info {
     margin-left: 0;
-    margin-top: 1rem;
+    margin-top: 15rem;
   }
 }
 
@@ -449,6 +449,10 @@
   row-gap: 2rem;
 }
 
+.space {
+  margin-top: 80px;
+}
+
 .logotype {
   width: 30px;
   height: 30px;
@@ -490,12 +494,9 @@
   bottom: 0;
 }
 
-.ServicesSection {
-  margin-top: 140px;
-}
-
 .ServicesSection .service {
-  width: 95%;
+  width: 330px;
+  height: 400px;
   background-color: #191D2B;
   border-left: 1px solid #2e344e;
   border-right: 1px solid #2e344e;
@@ -507,7 +508,8 @@
 
 @media screen and (max-width: 1400px) {
   .ServicesSection .service {
-    width: 100%;
+    width: 150px;
+    height: 100%;
     margin-bottom: 1rem;
   }
 }
@@ -525,7 +527,7 @@
   font-weight: 500;
   position: relative;
   padding-bottom: 1rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .ServicesSection .service .service-content .s-title::after {
@@ -538,24 +540,19 @@
   background-color: #2e344e;
 }
 
-.servives-container {
+.services-container {
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 4rem;
 }
 
-@media screen and (max-width: 1400px) {
-  .servives-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 2rem;
-  }
+img {
+  width: 85px;
+  height: 85px;
 }
 
 * {
@@ -582,6 +579,7 @@ body {
   color: #ffffff;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 1.2rem;
+  background-color: #10121B;
 }
 
 span {

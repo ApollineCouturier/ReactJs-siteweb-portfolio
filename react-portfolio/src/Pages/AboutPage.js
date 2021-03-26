@@ -4,6 +4,7 @@ import ImageSection from '../Components/ImageSection';
 import SkillsSection from '../Components/SkillsSection';
 import ServicesSection from '../Components/ServicesSection';
 import design from '../img/design.svg';
+import logo from '../img/logoApolline.jpg';
 
 function AboutPage() {
     return(
@@ -26,10 +27,22 @@ function AboutPage() {
                 <SkillsSection type={'others'} skill={'Git'} progress={'50%'} width={'50%'} logo={"https://img.icons8.com/color/50/000000/git.png"}/>
                 <SkillsSection type={'others'} skill={'Anglais'} progress={'90%'} width={'90%'} logo={"https://img.icons8.com/doodle/48/000000/great-britain.png"}/>
             </div>
+            <div className="space"></div>
+            <Tittle title={'Services'} span={'Services'} />
             <div className="services-container">
-                <ServicesSection image={design} title="Design" text="Design créer par Yannick Simoens, étudiant freelance à eartsup en 2ème année" />
-                <ServicesSection image={design} title="Design" text="Design créer par Yannick Simoens, étudiant freelance à eartsup en 2ème année" />
-                <ServicesSection image={design} title="Design" text="Design créer par Yannick Simoens, étudiant freelance à eartsup en 2ème année" />
+                <div className="elem-service">
+                    <ServicesSection image={design} title="Design" text="Design créer par Yannick Simoens, étudiant freelance à eartsup en 2ème année qui s'occupera de toute la partie Design des projets" />
+                </div>
+                <div className="elem-service">
+                    <ServicesSection 
+                    image={"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMS45OTcgNTExLjk5NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNNTA2Ljc2LDI0Mi44MjhsLTExOC40LTEyNS40NGMtNy4yNzctNy43MTgtMTkuNDI0LTguMDctMjcuMTQyLTAuNzg3Yy03LjcwNiw3LjI3Ny04LjA2NCwxOS40My0wLjc4MSwyNy4xNDIgICAgbDEwNS45NjUsMTEyLjI1NkwzNjAuNDM3LDM2OC4yNjhjLTcuMjgzLDcuNzEyLTYuOTI1LDE5Ljg1OSwwLjc4MSwyNy4xNDJjMy43MTIsMy41MDEsOC40NTQsNS4yMzUsMTMuMTc4LDUuMjM1ICAgIGM1LjEwMSwwLDEwLjE5NS0yLjAyMiwxMy45NjUtNi4wMWwxMTguNC0xMjUuNDQ2QzUxMy43NDIsMjYxLjc4NSw1MTMuNzQyLDI1MC4yMjYsNTA2Ljc2LDI0Mi44Mjh6IiBmaWxsPSIjMDM3ZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxnPgoJCTxwYXRoIGQ9Ik0xNTEuNTY2LDM2OC4yNjJMNDUuNjA4LDI1NS45OTlsMTA1Ljk1OC0xMTIuMjYyYzcuMjc3LTcuNzEyLDYuOTI1LTE5Ljg2Ni0wLjc4Ny0yNy4xNDIgICAgYy03LjcwNi03LjI3Ny0xOS44NjYtNi45MjUtMjcuMTQyLDAuNzg3bC0xMTguNCwxMjUuNDRjLTYuOTgyLDcuMzk4LTYuOTgyLDE4Ljk2MywwLDI2LjM2MkwxMjMuNjQzLDM5NC42MyAgICBjMy43NzYsNCw4Ljg2NCw2LjAxNiwxMy45NjUsNi4wMTZjNC43MjMsMCw5LjQ2Ni0xLjc0MSwxMy4xNzEtNS4yNDJDMTU4LjQ5OCwzODguMTI3LDE1OC44NDMsMzc1Ljk3NCwxNTEuNTY2LDM2OC4yNjJ6IiBmaWxsPSIjMDM3ZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxnPgoJCTxwYXRoIGQ9Ik0yODcuMDYxLDUyLjY5N2MtMTAuNDc3LTEuNTg3LTIwLjI4Miw1LjYwNi0yMS44ODIsMTYuMDgzbC01Ni4zMiwzNjguNjRjLTEuNiwxMC40ODMsNS42LDIwLjI4MiwxNi4wODMsMjEuODgyICAgIGMwLjk4NiwwLjE0NywxLjk1OCwwLjIxOCwyLjkyNSwwLjIxOGM5LjMyNSwwLDE3LjUwNC02LjgwMywxOC45NTctMTYuMzAxbDU2LjMyLTM2OC42NCAgICBDMzA0Ljc0NCw2NC4wOTUsMjk3LjU0NCw1NC4yOTcsMjg3LjA2MSw1Mi42OTd6IiBmaWxsPSIjMDM3ZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg=="}
+                    title="Code"
+                    text="Je développe des sites web, application mobile et logiciel"/>
+                </div>
+                <div className="elem-service">
+                    <ServicesSection image={logo} title="Freelance" text="Etudiante en 3e année à Epitech,
+                    je fais aussi de la freelance sur mon temps libre " />
+                </div>
             </div>
         </div>
     )
