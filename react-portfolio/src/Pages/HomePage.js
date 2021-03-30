@@ -1,7 +1,6 @@
 import React from 'react';
-import {faCodepen, faFacebook, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {faCodepen, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
-import {faYoutube} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {Link} from 'react-router-dom';
 
@@ -23,7 +22,7 @@ function HomePage() {
                     <Link to="#" className="icon-holder">
                         <FontAwesomeIcon icon={faInstagram} className="icon insta" />
                     </Link>
-                    <a href="https://github.com/ApollineCouturier" target="_blank" className="icon-holder">
+                    <a href="https://github.com/ApollineCouturier" target="_blank" className="icon-holder" rel="noreferrer">
                         <FontAwesomeIcon icon={faGithub} className="icon gh" />
                     </a>
                     <a href="https://codepen.io/apollinecouturier/" className="icon-holder">

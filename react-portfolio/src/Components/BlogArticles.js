@@ -1,6 +1,5 @@
 import React from 'react';
 import about from '../img/myblog/apo.jpg';
-import cv from '../img/cvApollineCouturierGauducheau_compressed.pdf';
 
 function BlogArticles() {
     return (

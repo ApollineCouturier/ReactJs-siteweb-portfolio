@@ -31,7 +31,7 @@ function ImageSection() {
                     </div>
                 </div>
                 <a href={cv} download><button className="btn">Download Cv</button></a>
-                <a href={cv} target="_blank"><button className="btn watch">Watch Cv</button></a>
+                <a href={cv} target="_blank" rel="noreferrer"><button className="btn watch">Watch Cv</button></a>
             </div>
         </div>
     )
