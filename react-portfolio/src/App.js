@@ -5,8 +5,7 @@ import {Switch, Route} from 'react-router-dom';
 import AboutPage from './Pages/AboutPage';
 import PortfoliosPage from './Pages/PortfoliosPage';
 import BlogsPage from './Pages/BlogsPage';
-import ContactPage from './Pages/ContactPage';
-import SiteWeb from './Pages/Blog/SiteWeb';
+import ContactPage from './Pages/ContactPage'
 
 function App() {
   return (
@@ -28,9 +27,6 @@ function App() {
             </Route>
             <Route path="/blogs" exact>
               <BlogsPage />
-            </Route>
-            <Route path="/SiteWeb" exact>
-              <SiteWeb />
             </Route>
             <Route path="/contact" exact>
               <ContactPage />
