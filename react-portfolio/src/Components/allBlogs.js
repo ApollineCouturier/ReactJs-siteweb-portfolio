@@ -8,11 +8,12 @@ const blogs = [
     {
         id: 1,
         image: blog1,
-        title: 'UI/UX Design Starter with Figma',
-        link: 'https://www.facebook.com/',
+        title: 'CodePen',
+        link: '/SiteWeb',
         date : '21',
         month: 'Mar',
-        year: '2020'
+        year: '2020',
+        text: 'hello\ntest'
     },
     {
         id: 2,
