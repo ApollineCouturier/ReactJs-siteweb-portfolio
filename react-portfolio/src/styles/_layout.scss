@@ -1,11 +1,11 @@
 .App{
     .sidebar{
-        width: 16%;
+        width: 20%;
         height: 100vh;
-        background-color: #191D2B;
+        background-color: #121824;
         position: fixed;
         z-index: 11;
-        border-right: 1px solid #2e344e;
+        border-right: 1px solid rgba(0, 0, 0, 0.329);
         transform-origin: left;
         @media screen and (max-width: 1000px){
             transition: all .4s ease-in-out;
@@ -26,9 +26,10 @@
     .main-content{
         width: 84%;
         margin-left: 16%;
-        background-color: #10121B;
         min-height: 100vh;
-        background-image: url("./img/dots.svg");
+        background-image: url("./img/webBgMain.jpg");
+        background-size: 125%;
+
         display: grid;
         position: relative;
         .content{

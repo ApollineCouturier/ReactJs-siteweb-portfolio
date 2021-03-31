@@ -9,6 +9,7 @@ import logo from '../img/logoApolline.jpg';
 function AboutPage() {
     return(
         <div className="AboutPage">
+            <div id="myElement"></div>
             <Tittle title={'Sur Moi'} span={'Sur Moi'} />
             <ImageSection />
             <Tittle title={'Compétences'} span={'Compétences'} />

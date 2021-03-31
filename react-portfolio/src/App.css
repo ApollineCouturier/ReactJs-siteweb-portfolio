@@ -1,10 +1,10 @@
 .App .sidebar {
-  width: 16%;
+  width: 20%;
   height: 100vh;
-  background-color: #191D2B;
+  background-color: #121824;
   position: fixed;
   z-index: 11;
-  border-right: 1px solid #2e344e;
+  border-right: 1px solid rgba(0, 0, 0, 0.329);
   -webkit-transform-origin: left;
           transform-origin: left;
 }
@@ -37,9 +37,9 @@
 .App .main-content {
   width: 84%;
   margin-left: 16%;
-  background-color: #10121B;
   min-height: 100vh;
-  background-image: url("./img/dots.svg");
+  background-image: url("./img/webBgMain.jpg");
+  background-size: 125%;
   display: -ms-grid;
   display: grid;
   position: relative;
@@ -146,16 +146,14 @@
 }
 
 .NavBar .nav .profile {
-  width: 90%;
+  width: 100%;
+  height: 30%;
   text-align: center;
-  margin-top: 1rem;
-  border-bottom: 1px solid #2e344e;
 }
 
 .NavBar .nav .profile img {
   width: 100%;
-  height: 80%;
-  border: 5px solid #2e344e;
+  height: 100%;
   margin-bottom: 1rem;
 }
 
@@ -170,7 +168,7 @@
 
 .NavBar .nav .nav-items .nav-item a {
   text-decoration: none;
-  font-size: inherit;
+  font-size: 1.5rem;
   color: inherit;
   display: block;
   padding: .5rem 0;
@@ -204,7 +202,7 @@
 
 .NavBar .nav .footer {
   width: 100%;
-  border-top: 1px solid #2e344e;
+  border-top: 1px solid black;
 }
 
 .NavBar .nav .footer p {
@@ -213,7 +211,7 @@
 }
 
 .active {
-  background-color: #037FFF;
+  background-color: #6292db;
 }
 
 @-webkit-keyframes ScalePage {
@@ -245,6 +243,12 @@
           animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
 }
 
+.hero {
+  background-color: #121824;
+  border-radius: 30px;
+  border: 1px solid #FFCC35;
+}
+
 .hero-text {
   color: white;
   text-align: center;
@@ -252,7 +256,7 @@
 }
 
 .hero-text span {
-  color: #037FFF;
+  color: #FFCC35;
 }
 
 .h-sub-text {
@@ -306,6 +310,8 @@
   position: relative;
   padding-bottom: 1rem;
   letter-spacing: 3px;
+  margin-left: 35px;
+  margin-top: 15px;
 }
 
 .Title::before {
@@ -324,7 +330,7 @@
   bottom: 0;
   position: absolute;
   left: 0;
-  background-color: #037FFF;
+  background-color: #FFCC35;
   width: 3rem;
   height: .4rem;
   border-radius: 50px;
@@ -341,6 +347,9 @@
 .AboutPage {
   -webkit-animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
           animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  background-color: #121824;
+  border-radius: 30px;
+  border: 1px solid #FFCC35;
 }
 
 .top {
@@ -353,6 +362,8 @@
   display: flex;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .ImageSection .img {
@@ -412,7 +423,7 @@
 
 .btn {
   padding: 1rem 2rem;
-  background-color: #037FFF;
+  background-color: #FFCC35;
   outline: none;
   border: none;
   font-family: inherit;
@@ -443,6 +454,8 @@
 }
 
 .skills-container {
+  padding-left: 25px;
+  padding-right: 25px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -478,15 +491,15 @@
 }
 
 .btn-port:hover {
-  background-color: #037FFF;
+  background-color: #FFCC35;
 }
 
 .btn-port:active {
-  background-color: #037FFF;
+  background-color: #FFCC35;
 }
 
 .btn-port:focus {
-  background-color: #037FFF;
+  background-color: #FFCC35;
 }
 
 .buttons {
@@ -556,7 +569,7 @@
 
 .skills-container .skill-bar .skill-progress .progress .inner-pregress {
   position: absolute;
-  background-color: #037FFF;
+  background-color: #FFCC35;
   height: 100%;
   bottom: 0;
 }
@@ -582,7 +595,7 @@
 }
 
 .ServicesSection .service:hover {
-  border-top: 8px solid #037FFF;
+  border-top: 8px solid #FFCC35;
 }
 
 .ServicesSection .service .service-content {
@@ -608,6 +621,9 @@
 }
 
 .services-container {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
   margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -675,7 +691,7 @@
 }
 
 .BlogsPage .blog .blog-content .blog-link:hover {
-  color: #037FFF;
+  color: #FFCC35;
 }
 
 .b-title {
@@ -686,6 +702,7 @@
   -webkit-animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
           animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
   width: 100%;
+  padding-right: 25px;
 }
 
 .ContactItem:not(:last-child) {
@@ -709,7 +726,7 @@
 
 .ContactItem .contact img {
   padding: 1rem;
-  border: 1px solid #2e344e;
+  border: 1px solid #FFCC35;
   margin-left: 2rem;
   width: 16%;
 }
@@ -717,6 +734,12 @@
 .ContactItem .contact .right-items h6 {
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+.ContactPageMain {
+  background-color: #121824;
+  border-radius: 30px;
+  border: 1px solid #FFCC35;
 }
 
 .ContactPage {
@@ -779,16 +802,22 @@
 .PortfolioPage {
   -webkit-animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
           animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  background-color: #121824;
+  border-radius: 30px;
+  border: 1px solid #FFCC35;
 }
 
 .infoItem {
   background-color: #003061;
   border-radius: 10px;
-  height: 220px;
+  height: 150px;
   padding: 1rem;
 }
 
 .portfolis {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
   -webkit-animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
           animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
   width: 100%;
@@ -863,7 +892,7 @@
   text-decoration: none;
   font-family: inherit;
   border-radius: 10px;
-  background-color: #037FFF;
+  background-color: #FFCC35;
   color: white;
 }
 
@@ -887,7 +916,7 @@
 }
 
 .portfolis .portfolio h5:hover {
-  color: #037FFF;
+  color: #FFCC35;
   cursor: pointer;
 }
 
@@ -912,14 +941,14 @@ body::-webkit-scrollbar-track {
 }
 
 body {
-  color: #ffffff;
+  color: white;
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   background-color: #10121B;
 }
 
 span {
-  color: #037FFF;
+  color: #FFCC35;
 }
 
 @media screen and (max-width: 411px) {

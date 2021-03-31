@@ -1,16 +1,22 @@
 .PortfolioPage{
     animation: ScalePage .5s  cubic-bezier(.36, .11, .89, .32);
+    background-color: #121824;
+    border-radius: 30px;
+    border: 1px solid #FFCC35;
 }
 
 .infoItem{
     background-color: hsl(210, 100%, 19%);
     border-radius: 10px;
-    height: 220px;
+    height: 150px;
     padding: 1rem;
 }
 
 
 .portfolis{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
     animation: ScalePage .5s  cubic-bezier(.36, .11, .89, .32);
     width: 100%;
     display: grid;
@@ -62,7 +68,7 @@
                         text-decoration: none;
                         font-family: inherit;
                         border-radius: 10px;
-                        background-color: #037FFF;
+                        background-color: #FFCC35;
                         color: white;
                         &:not(:last-child){
                             margin-right: 2rem;
@@ -86,7 +92,7 @@
             color: white;
             transition: all .3s ease-in-out;
             &:hover{
-                color:  #037FFF;
+                color:  #FFCC35;
                 cursor: pointer;
             }
         }

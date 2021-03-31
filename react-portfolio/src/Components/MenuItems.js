@@ -21,7 +21,6 @@ function MenuItems({menuItem}) {
                             <br/>
                             <hr />
                             <br />
-                            <p> {item.paragraphe}</p>
                         </div>
                     </div>
                 })

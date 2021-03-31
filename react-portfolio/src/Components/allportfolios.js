@@ -13,7 +13,6 @@ const portfolios = [
         icon1: 'Github',
         image: port1,
         title: 'Site web Designe',
-        paragraphe:'Changer le design de l\' ancien siteweb et rajouter la possibilité de télécharger leur catalogue'
     },
     {
         id: 2,

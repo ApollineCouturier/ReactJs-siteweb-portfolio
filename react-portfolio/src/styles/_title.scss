@@ -5,6 +5,8 @@
     position: relative;
     padding-bottom: 1rem;
     letter-spacing: 3px;
+    margin-left: 35px;
+    margin-top: 15px;
     &::before{
         content: "";
         bottom: 0;
@@ -21,7 +23,7 @@
         bottom: 0;
         position: absolute;
         left: 0;
-        background-color: #037FFF;
+        background-color: #FFCC35;
         width: 3rem;
         height: .4rem;
         border-radius: 50px;

@@ -14,7 +14,7 @@
             margin-bottom: 1rem;
         }
         &:hover{
-            border-top: 8px solid #037FFF;
+            border-top: 8px solid #FFCC35;
         }
         
         .service-content{
@@ -41,6 +41,9 @@
 
 
 .services-container{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
     margin-top: 80px;
     display: flex;
     justify-content: space-between;

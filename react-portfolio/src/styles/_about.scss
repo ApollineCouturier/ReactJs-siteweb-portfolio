@@ -1,5 +1,8 @@
 .AboutPage{
     animation: ScalePage .5s  cubic-bezier(.36, .11, .89, .32);
+    background-color: #121824;
+    border-radius: 30px;
+    border: 1px solid #FFCC35;
 }
 
 .top{
@@ -10,6 +13,8 @@
     display: flex;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    padding-left: 25px;
+    padding-right: 25px;
     .img{
         width: 100%;
         height: 50vh;
@@ -57,7 +62,7 @@
 
 .btn{
     padding: 1rem 2rem;
-    background-color: #037FFF;
+    background-color: #FFCC35;
     outline: none;
     border: none;
     font-family: inherit;
@@ -85,6 +90,8 @@
 }
 
 .skills-container{
+    padding-left: 25px;
+    padding-right: 25px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
@@ -109,13 +116,13 @@
         margin-right: 1rem;
     }
     &:hover{
-        background-color: #037FFF;
+        background-color: #FFCC35;
     }
     &:active{
-        background-color: #037FFF;
+        background-color: #FFCC35;
     }
     &:focus{
-        background-color: #037FFF;
+        background-color: #FFCC35;
     }
 }
 

@@ -8,12 +8,18 @@
 }
 
 
+.hero{
+    background-color: #121824;
+    border-radius: 30px;
+    border: 1px solid #FFCC35;
+}
+
 .hero-text{
     color: white;
     text-align: center;
     font-size: 3.6rem;
     span{
-        color: #037FFF;
+        color: #FFCC35;
     }
 }
 
