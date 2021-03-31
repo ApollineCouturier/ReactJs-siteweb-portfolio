@@ -10,7 +10,7 @@ function HomePage() {
         <div className="HomePage">
             <header className="hero">
                 <h1 className="hero-text">
-                    <TextTyping />
+                    <div className="texttype"><TextTyping /></div>
                     <span> Apolline Couturier Gauducheau</span>
                 </h1>
                 <p className="h-sub-text">
