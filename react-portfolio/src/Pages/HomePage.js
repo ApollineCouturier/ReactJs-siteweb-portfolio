@@ -15,7 +15,7 @@ function HomePage() {
                 <p className="h-sub-text">
                     Bienvenue sur mon site web,<br />
                     Je suis étudiante en 3ème année à epitech<br />
-                    Je suis à la recherche d'un stage de 4-5 mois d'Avril à Août (libre le 29 mars)<br />
+                    Je suis à la recherche d'un stage de 3-4 mois d'Avril à Août (libre le 29 mars)<br />
                     Mon objectif est de travailler dans le développement de logiciels, de sites web et d’applications mobiles.<br />
                 </p>
                 <div className="icons">
