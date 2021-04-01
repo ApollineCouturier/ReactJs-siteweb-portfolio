@@ -32,7 +32,7 @@ function AboutPage() {
             <Tittle title={'Services'} span={'Services'} />
             <div className="services-container">
                 <div className="elem-service">
-                    <ServicesSection image={design} link={<a href="" target="_blank" rel="noreferrer"><button className="btn watch">Son site</button></a>} title="Design" text="Design créer par Yannick Simoens, étudiant freelance à eartsup en 2ème année qui s'occupera de toute la partie Design des projets" />
+                    <ServicesSection image={design} link={<a href="http://yandesign.fr/" target="_blank" rel="noreferrer"><button className="btn watch">Son site</button></a>} title="Design" text="Design créer par Yannick Simoens, étudiant freelance à eartsup en 2ème année qui s'occupera de toute la partie Design des projets" />
                 </div>
                 <div className="elem-service">
                     <ServicesSection 

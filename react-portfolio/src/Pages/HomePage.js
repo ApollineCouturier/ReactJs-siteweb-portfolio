@@ -3,7 +3,6 @@ import {faCodepen, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-i
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import TextTyping from '../Components/TextTyping';
-import {Link} from 'react-router-dom';
 
 function HomePage() {
     return (
