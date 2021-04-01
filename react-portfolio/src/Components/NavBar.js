@@ -28,7 +28,7 @@ function Navbar() {
                     </li>
                     <li className="nav-item">
                         <NavLink to="/contact" exact activeClassName="active">
-                            Contact
+                            Contacte
                         </NavLink>
                     </li>
                 </ul>

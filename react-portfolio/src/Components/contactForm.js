@@ -19,7 +19,7 @@ export default function ContactUs() {
                     <div className="row pt-5 mx-auto">
                     <div className="col-8 form-group pt-2 mx-auto form__group field">
                         <input type="input" className="form__field" placeholder="Name" name="name" id='name' required />
-                        <label for="name" className="form__label">Name</label>
+                        <label for="name" className="form__label">Nom</label>
                     </div>
                         <div className="col-8 form-group pt-2 mx-auto form__group field">
                             <input type="email" className="form__field" placeholder="Email" name="email" id='email' required />
@@ -27,14 +27,14 @@ export default function ContactUs() {
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto form__group field">
                             <input type="text" className="form__field" placeholder="Subject" name="subject" id='sub' required />
-                            <label for="sub" className="form__label">Subject</label>
+                            <label for="sub" className="form__label">Sujet</label>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto form__group field">
                             <textarea className="form__field" id="message" cols="35" rows="6" placeholder="Your message" name="message"/>
                             <label for="message" className="form__label">Message</label>
                         </div>
                         <div className="col-8 pt-3 mx-auto">
-                            <input type="submit" className="btn btn-info" value="Send Message"/>
+                            <input type="submit" className="btn btn-info" value="Envoyer"/>
                         </div>
                     </div>
                 </form>
