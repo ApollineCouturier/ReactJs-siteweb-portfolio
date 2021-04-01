@@ -1,14 +1,12 @@
 .PortfolioPage{
     animation: ScalePage .5s  cubic-bezier(.36, .11, .89, .32);
     background-color: #121824;
-    border-radius: 30px;
     border: 1px solid #FFCC35;
 }
 
 .infoItem{
-    background-color: hsl(210, 100%, 19%);
-    border-radius: 10px;
-    height: 150px;
+    border: 2px solid #FFCC35;
+    height: 160px;
     padding: 1rem;
 }
 
@@ -67,7 +65,6 @@
                         padding: 1rem;
                         text-decoration: none;
                         font-family: inherit;
-                        border-radius: 10px;
                         background-color: #FFCC35;
                         color: white;
                         &:not(:last-child){

@@ -39,7 +39,6 @@
   margin-left: 16%;
   min-height: 100vh;
   background-image: url("./img/webBgMain.jpg");
-  background-size: 125%;
   display: -ms-grid;
   display: grid;
   position: relative;
@@ -111,21 +110,7 @@
 }
 
 .nav-btn .lines-1:not(:last-child), .nav-btn .lines-2:not(:last-child), .nav-btn .lines-3:not(:last-child) {
-  margin-bottom: .7rem;
-}
-
-@media screen and (max-width: 380px) {
-  .nav-btn .lines-1, .nav-btn .lines-2, .nav-btn .lines-3 {
-    display: block;
-    margin-left: 50px;
-  }
-}
-
-@media screen and (max-width: 280px) {
-  .nav-btn .lines-1, .nav-btn .lines-2, .nav-btn .lines-3 {
-    display: block;
-    margin-left: 100px;
-  }
+  margin-bottom: .5rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -139,6 +124,27 @@
 
 .texttype {
   height: 80px;
+}
+
+@media screen and (max-width: 360px) {
+  .texttype {
+    margin-bottom: 80px;
+    font-size: 40px;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .texttype {
+    font-size: 40px;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .texttype {
+    margin-bottom: 80px;
+  }
 }
 
 .NavBar {
@@ -231,7 +237,7 @@
 }
 
 .active {
-  background-color: #b68800;
+  border: 3px solid #b68800;
 }
 
 @-webkit-keyframes ScalePage {
@@ -263,10 +269,53 @@
           animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
 }
 
+@media screen and (max-width: 380px) {
+  .HomePage {
+    width: 100%;
+    height: 70%;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .HomePage {
+    margin-left: 15%;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .HomePage {
+    width: 100%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .HomePage {
+    width: 100%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .HomePage {
+    width: 100%;
+    height: 70%;
+  }
+}
+
 .hero {
   background-color: #121824;
   border-radius: 30px;
   border: 1px solid #FFCC35;
+}
+
+@media screen and (max-width: 360px) {
+  .hero {
+    margin-right: 10px;
+  }
 }
 
 .hero-text {
@@ -281,6 +330,13 @@
 
 .h-sub-text {
   text-align: center;
+}
+
+@media screen and (max-width: 300px) {
+  .h-sub-text {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
 }
 
 .icons {
@@ -370,6 +426,12 @@
   background-color: #121824;
   border-radius: 30px;
   border: 1px solid #FFCC35;
+}
+
+@media screen and (max-width: 360px) {
+  .AboutPage {
+    width: 100%;
+  }
 }
 
 .top {
@@ -494,8 +556,8 @@
 
 .btn-port {
   padding: 1rem 2rem;
-  background-color: #0381ff5b;
-  border: none;
+  border: 3px solid #FFCC35;
+  background-color: transparent;
   outline: none;
   cursor: pointer;
   font-size: inherit;
@@ -910,14 +972,12 @@
   -webkit-animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
           animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
   background-color: #121824;
-  border-radius: 30px;
   border: 1px solid #FFCC35;
 }
 
 .infoItem {
-  background-color: #003061;
-  border-radius: 10px;
-  height: 150px;
+  border: 2px solid #FFCC35;
+  height: 160px;
   padding: 1rem;
 }
 
@@ -998,7 +1058,6 @@
   padding: 1rem;
   text-decoration: none;
   font-family: inherit;
-  border-radius: 10px;
   background-color: #FFCC35;
   color: white;
 }
@@ -1027,41 +1086,19 @@
   cursor: pointer;
 }
 
-.experiences-container {
-  padding-left: 25px;
-  padding-right: 695px;
-  padding-bottom: 85px;
-  margin-top: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.nb1 {
+.XPPage {
+  -webkit-animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
+          animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
   background-color: #121824;
   border-radius: 30px;
   border: 1px solid #FFCC35;
-  padding: 15px;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  height: 1500px;
+  width: 110%;
 }
 
-.nb1 ul {
-  list-style: none;
-}
-
-.nb1:hover {
-  background-color: #006226;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.tilteExp span {
-  font-size: 60px;
-  margin-top: 3px;
+.XPPage span {
+  font-size: 55px;
+  margin-top: 5px;
 }
 
 * {
@@ -1076,7 +1113,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #0056d898;
+  background-color: #FFCC35;
   border-radius: 50px;
 }
 

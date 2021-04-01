@@ -19,7 +19,6 @@ function MenuItems({menuItem}) {
                                 {item.title}
                             </h5>
                             <br/>
-                            <hr />
                             <br />
                         </div>
                     </div>

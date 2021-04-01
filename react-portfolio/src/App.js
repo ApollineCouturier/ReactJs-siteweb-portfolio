@@ -6,6 +6,7 @@ import AboutPage from './Pages/AboutPage';
 import PortfoliosPage from './Pages/PortfoliosPage';
 import BlogsPage from './Pages/BlogsPage';
 import ContactPage from './Pages/ContactPage'
+import XPPage from './Pages/XPpage'
 import { useState } from 'react';
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
             </Route>
             <Route path="/about" exact>
               <AboutPage />
+            </Route>
+            <Route path="/xp" exact>
+              <XPPage />
             </Route>
             <Route path="/portfolios" exact>
               <PortfoliosPage />
