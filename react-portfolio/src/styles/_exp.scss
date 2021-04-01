@@ -1,0 +1,30 @@
+.experiences-container{
+    padding-left: 25px;
+    padding-right: 695px;
+    padding-bottom: 85px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nb1{
+    background-color: #121824;
+    border-radius: 30px;
+    border: 1px solid #FFCC35;
+    padding: 15px;
+    transition: all 1s ease-in-out;
+    ul {
+        list-style: none;
+    }
+    &:hover{
+        background-color: #006226;
+        transition: all 1s ease-in-out;
+    }
+}
+
+.tilteExp{
+    span{
+        font-size: 60px;
+        margin-top: 3px;
+    }
+}

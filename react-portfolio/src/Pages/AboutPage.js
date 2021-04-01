@@ -3,6 +3,7 @@ import Tittle from '../Components/Tittle'
 import ImageSection from '../Components/ImageSection';
 import SkillsSection from '../Components/SkillsSection';
 import ServicesSection from '../Components/ServicesSection';
+import ExpAndEduc from '../Components/ExpAndEduc';
 import design from '../img/design.svg';
 import logo from '../img/logoApolline.jpg';
 
@@ -44,6 +45,13 @@ function AboutPage() {
                     <ServicesSection image={logo} title="Freelance" text="Etudiante en 3e année à Epitech,
                     je fais aussi de la freelance sur mon temps libre " />
                 </div>
+            </div>
+            <div className="space"></div>
+            <div className="tilteExp">
+                <Tittle title={'Experiences & Education'} span={'Experiences & Education'} />
+            </div>
+            <div className="experiences-container">
+                <ExpAndEduc myClass="nb1"/>
             </div>
         </div>
     )
