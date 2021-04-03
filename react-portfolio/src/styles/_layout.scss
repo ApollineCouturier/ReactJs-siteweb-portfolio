@@ -27,7 +27,7 @@
         width: 84%;
         margin-left: 16%;
         min-height: 100vh;
-        background-image: url("./img/webBgMain.jpg");
+        background-color: #121824;
         display: grid;
         position: relative;
         .content{
@@ -65,13 +65,17 @@
     justify-content: space-between;
     cursor: pointer;
     margin-top: 12px;
+    @media screen and (min-height: 360px){
+        right: 1.5%;
+        width: 3rem;
+        height: 3rem;
+    }
     .lines-1, .lines-2, .lines-3{
         height: .4rem;
         width: 100%;
-        background-color: #FFCC35;
+        background-color: #fff;
         pointer-events: none;
         display: none;
-        border-radius: 20px;
         &:not(:last-child){
             margin-bottom: .5rem;
         }
@@ -86,16 +90,14 @@
 
 .texttype{
     height: 80px;
-    @media screen and (max-width: 360px){
-        margin-bottom: 80px;
-        font-size: 40px;
-        margin-top: 10%;
+    @media (min-width: 300px) and (max-width: 400px) {
+        height: 180px;
     }
-    @media screen and (max-width: 420px){
-        font-size: 40px;
-        margin-top: 10%;
+    @media (min-width: 400px) and (max-width: 500px) {
+        height: 180px;
     }
-    @media screen and (max-width: 440px){
-        margin-bottom: 80px;
+    @media (min-width: 600px) and (max-width: 700px) {
+        height: 160px;
     }
+
 }

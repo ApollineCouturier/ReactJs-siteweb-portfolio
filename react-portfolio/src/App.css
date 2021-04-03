@@ -38,7 +38,7 @@
   width: 84%;
   margin-left: 16%;
   min-height: 100vh;
-  background-image: url("./img/webBgMain.jpg");
+  background-color: #121824;
   display: -ms-grid;
   display: grid;
   position: relative;
@@ -100,13 +100,20 @@
   margin-top: 12px;
 }
 
+@media screen and (min-height: 360px) {
+  .nav-btn {
+    right: 1.5%;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
 .nav-btn .lines-1, .nav-btn .lines-2, .nav-btn .lines-3 {
   height: .4rem;
   width: 100%;
-  background-color: #FFCC35;
+  background-color: #fff;
   pointer-events: none;
   display: none;
-  border-radius: 20px;
 }
 
 .nav-btn .lines-1:not(:last-child), .nav-btn .lines-2:not(:last-child), .nav-btn .lines-3:not(:last-child) {
@@ -126,24 +133,21 @@
   height: 80px;
 }
 
-@media screen and (max-width: 360px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .texttype {
-    margin-bottom: 80px;
-    font-size: 40px;
-    margin-top: 10%;
+    height: 180px;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media (min-width: 400px) and (max-width: 500px) {
   .texttype {
-    font-size: 40px;
-    margin-top: 10%;
+    height: 180px;
   }
 }
 
-@media screen and (max-width: 440px) {
+@media (min-width: 600px) and (max-width: 700px) {
   .texttype {
-    margin-bottom: 80px;
+    height: 160px;
   }
 }
 
@@ -172,12 +176,12 @@
 
 .NavBar .nav .profile {
   width: 100%;
-  height: 30%;
   text-align: center;
+  background-color: #fff;
 }
 
 .NavBar .nav .profile img {
-  width: 100%;
+  width: 50%;
   height: 100%;
   margin-bottom: 1rem;
 }
@@ -207,7 +211,7 @@
   left: 0;
   width: .4rem;
   height: 100%;
-  background-color: #ffcd3555;
+  background-color: rgba(148, 148, 148, 0.555);
   color: white;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
@@ -237,7 +241,7 @@
 }
 
 .active {
-  border: 3px solid #b68800;
+  border: 3px solid #fff;
 }
 
 @-webkit-keyframes ScalePage {
@@ -258,87 +262,6 @@
   }
 }
 
-.HomePage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 80%;
-  -webkit-animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
-          animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
-}
-
-@media screen and (max-width: 380px) {
-  .HomePage {
-    width: 100%;
-    height: 70%;
-    padding-right: 2%;
-    padding-left: 2%;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .HomePage {
-    margin-left: 15%;
-    margin-top: 10%;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .HomePage {
-    width: 100%;
-    height: 70%;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .HomePage {
-    width: 100%;
-    height: 70%;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .HomePage {
-    width: 100%;
-    height: 70%;
-  }
-}
-
-.hero {
-  background-color: #121824;
-  border-radius: 30px;
-  border: 1px solid #FFCC35;
-}
-
-@media screen and (max-width: 360px) {
-  .hero {
-    margin-right: 10px;
-  }
-}
-
-.hero-text {
-  color: white;
-  text-align: center;
-  font-size: 3.6rem;
-}
-
-.hero-text span {
-  color: #FFCC35;
-}
-
-.h-sub-text {
-  text-align: center;
-}
-
-@media screen and (max-width: 300px) {
-  .h-sub-text {
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-}
-
 .icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,6 +273,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 1.5rem 0;
+  margin-top: -150px;
 }
 
 .icons .icon-holder {
@@ -379,6 +303,97 @@
   color: #ffe600;
 }
 
+.HomePage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  -webkit-animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
+          animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
+}
+
+@media screen and (max-width: 320px) {
+  .HomePage {
+    left: 37%;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .HomePage {
+    left: 37%;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .HomePage {
+    margin-left: 15%;
+    margin-top: 10%;
+    left: 36%;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .HomePage {
+    width: 100%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .HomePage {
+    width: 100%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .HomePage {
+    width: 100%;
+    height: 70%;
+  }
+}
+
+.hero {
+  background-color: #121824;
+  border: 1px solid #fff;
+}
+
+@media screen and (max-width: 360px) {
+  .hero {
+    margin-right: 10px;
+  }
+}
+
+.hero-text {
+  color: white;
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 300;
+}
+
+.hero-text span {
+  color: #fff;
+}
+
+.h-sub-text {
+  text-align: center;
+}
+
+@media screen and (max-width: 300px) {
+  .h-sub-text {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
 .Title {
   text-transform: uppercase;
   font-size: 2rem;
@@ -398,7 +413,6 @@
   background-color: #0381ff38;
   width: 6rem;
   height: .4rem;
-  border-radius: 50px;
 }
 
 .Title::after {
@@ -406,13 +420,13 @@
   bottom: 0;
   position: absolute;
   left: 0;
-  background-color: #FFCC35;
+  background-color: #fff;
   width: 3rem;
   height: .4rem;
-  border-radius: 50px;
 }
 
 .Title span {
+  font-weight: 300;
   position: absolute;
   top: 15%;
   left: 0;
@@ -420,12 +434,15 @@
   opacity: 0.07;
 }
 
+.Title h3 {
+  font-weight: 300;
+}
+
 .AboutPage {
   -webkit-animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
           animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
   background-color: #121824;
-  border-radius: 30px;
-  border: 1px solid #FFCC35;
+  border: 1px solid #fff;
 }
 
 @media screen and (max-width: 360px) {
@@ -467,6 +484,7 @@
 
 .ImageSection .about-info h4 {
   font-size: 2rem;
+  font-weight: 300;
 }
 
 .ImageSection .about-info .about-text {
@@ -505,12 +523,12 @@
 
 .btn {
   padding: 1rem 2rem;
-  background-color: #FFCC35;
+  background-color: #fff;
   outline: none;
   border: none;
   font-family: inherit;
   font-size: inherit;
-  color: white;
+  color: #111;
   text-transform: uppercase;
   cursor: pointer;
   letter-spacing: 2px;
@@ -556,7 +574,7 @@
 
 .btn-port {
   padding: 1rem 2rem;
-  border: 3px solid #FFCC35;
+  border: 3px solid #fff;
   background-color: transparent;
   outline: none;
   cursor: pointer;
@@ -573,15 +591,15 @@
 }
 
 .btn-port:hover {
-  background-color: #FFCC35;
+  background-color: #fff;
 }
 
 .btn-port:active {
-  background-color: #FFCC35;
+  background-color: #fff;
 }
 
 .btn-port:focus {
-  background-color: #FFCC35;
+  background-color: #fff;
 }
 
 .buttons {
@@ -651,7 +669,7 @@
 
 .skills-container .skill-bar .skill-progress .progress .inner-pregress {
   position: absolute;
-  background-color: #FFCC35;
+  background-color: #fff;
   height: 100%;
   bottom: 0;
 }
@@ -677,7 +695,7 @@
 }
 
 .ServicesSection .service:hover {
-  border-top: 8px solid #FFCC35;
+  border-top: 8px solid #fff;
 }
 
 .ServicesSection .service .service-content {
@@ -773,7 +791,7 @@
 }
 
 .BlogsPage .blog .blog-content .blog-link:hover {
-  color: #FFCC35;
+  color: #fff;
 }
 
 .b-title {
@@ -808,7 +826,7 @@
 
 .ContactItem .contact img {
   padding: 1rem;
-  border: 1px solid #FFCC35;
+  border: 1px solid #fff;
   margin-left: 2rem;
   width: 16%;
 }
@@ -820,8 +838,7 @@
 
 .ContactPageMain {
   background-color: #121824;
-  border-radius: 30px;
-  border: 1px solid #FFCC35;
+  border: 1px solid #fff;
 }
 
 .ContactPage {
@@ -879,8 +896,7 @@
   margin-left: 25px;
   margin-right: 25px;
   background-color: #121824;
-  border-radius: 30px;
-  border: 1px solid #FFCC35;
+  border: 1px solid #fff;
 }
 
 .form__group {
@@ -941,9 +957,9 @@
   padding-bottom: 6px;
   font-weight: 700;
   border-width: 3px;
-  -o-border-image: linear-gradient(to right, #FFCC35, #121824);
-     border-image: -webkit-gradient(linear, left top, right top, from(#FFCC35), to(#121824));
-     border-image: linear-gradient(to right, #FFCC35, #121824);
+  -o-border-image: linear-gradient(to right, #fff, #121824);
+     border-image: -webkit-gradient(linear, left top, right top, from(#fff), to(#121824));
+     border-image: linear-gradient(to right, #fff, #121824);
   border-image-slice: 1;
 }
 
@@ -954,7 +970,7 @@
   -webkit-transition: 0.2s;
   transition: 0.2s;
   font-size: 1rem;
-  color: #FFCC35;
+  color: #fff;
   font-weight: 700;
 }
 
@@ -972,11 +988,11 @@
   -webkit-animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
           animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
   background-color: #121824;
-  border: 1px solid #FFCC35;
+  border: 1px solid #fff;
 }
 
 .infoItem {
-  border: 2px solid #FFCC35;
+  border: 2px solid #fff;
   height: 160px;
   padding: 1rem;
 }
@@ -1058,7 +1074,7 @@
   padding: 1rem;
   text-decoration: none;
   font-family: inherit;
-  background-color: #FFCC35;
+  background-color: #fff;
   color: white;
 }
 
@@ -1082,7 +1098,7 @@
 }
 
 .portfolis .portfolio h5:hover {
-  color: #FFCC35;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -1090,8 +1106,7 @@
   -webkit-animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
           animation: ScalePage 0.5s cubic-bezier(0.36, 0.11, 0.89, 0.32);
   background-color: #121824;
-  border-radius: 30px;
-  border: 1px solid #FFCC35;
+  border: 1px solid #fff;
   height: 1500px;
   width: 110%;
 }
@@ -1113,8 +1128,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #FFCC35;
-  border-radius: 50px;
+  background-color: #fff;
 }
 
 body::-webkit-scrollbar-track {
@@ -1124,12 +1138,13 @@ body::-webkit-scrollbar-track {
 body {
   color: white;
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   background-color: #10121B;
+  font-weight: 300;
 }
 
 span {
-  color: #FFCC35;
+  color: #fff;
 }
 
 @media screen and (max-width: 411px) {

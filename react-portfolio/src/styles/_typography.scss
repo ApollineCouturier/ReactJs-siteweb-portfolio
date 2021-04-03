@@ -5,9 +5,13 @@
     transform: translate(-50%, -50%);
     width: 80%;
     animation: ScalePage .5s  cubic-bezier(.36, .11, .89, .32);
-    @media screen and (max-width: 380px){
-        width: 100%;
-        height: 70%;
+    @media screen and (max-width: 320px){
+        left: 37%;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    @media screen and (max-width: 360px){
+        left: 37%;
         padding-right: 2%;
         padding-left: 2%;
     }
@@ -15,6 +19,9 @@
     @media screen and (max-width: 420px){
         margin-left: 15%;
         margin-top: 10%;
+        left: 36%;
+        padding-right: 2%;
+        padding-left: 2%;
     }
     @media screen and (max-width: 440px){
         width: 100%;
@@ -33,8 +40,7 @@
 
 .hero{
     background-color: #121824;
-    border-radius: 30px;
-    border: 1px solid #FFCC35;
+    border: 1px solid #fff;
     @media screen and (max-width: 360px){
         margin-right: 10px;
     }
@@ -44,8 +50,9 @@
     color: white;
     text-align: center;
     font-size: 3.6rem;
+    font-weight: 300;
     span{
-        color: #FFCC35;
+        color: #fff;
     }
 }
 
@@ -55,31 +62,4 @@
         padding-left: 5px;
     }
     text-align: center;
-}
-
-.icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem 0;
-    .icon-holder{
-        margin-right: 1rem;
-        .icon{
-           font-size: 2.8rem;
-           color: #ffffff;
-           transition: all .4s ease-in-out;
-        }
-        .insta:hover{
-            color: rgb(255, 0, 255);
-        }
-        .cp:hover{
-            color: rgba(35, 214, 65, 0.788);
-        }
-        .link:hover{
-            color: rgb(0, 183, 255);
-        }
-        .gh:hover{
-            color: rgb(255, 230, 0);
-        }
-    }
 }

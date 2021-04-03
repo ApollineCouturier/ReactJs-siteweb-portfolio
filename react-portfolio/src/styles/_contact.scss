@@ -15,7 +15,7 @@
         }
         img{
             padding: 1rem;
-            border: 1px solid #FFCC35;
+            border: 1px solid #fff;
             margin-left: 2rem;
             width: 16%;
         }
@@ -30,8 +30,7 @@
 
 .ContactPageMain{
     background-color: #121824;
-    border-radius: 30px;
-    border: 1px solid #FFCC35;
+    border: 1px solid #fff;
 }
 
 .ContactPage{
@@ -74,11 +73,10 @@
     margin-left: 25px;
     margin-right: 25px;
     background-color: #121824;
-    border-radius: 30px;
-    border: 1px solid #FFCC35;
+    border: 1px solid #fff;
 }
 
-$primary: #FFCC35;
+$primary: #fff;
 $secondary: #121824;
 $white: #fff;
 $gray: #9b9b9b;

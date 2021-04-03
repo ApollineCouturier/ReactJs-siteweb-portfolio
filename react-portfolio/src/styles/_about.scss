@@ -1,8 +1,7 @@
 .AboutPage{
     animation: ScalePage .5s  cubic-bezier(.36, .11, .89, .32);
     background-color: #121824;
-    border-radius: 30px;
-    border: 1px solid #FFCC35;
+    border: 1px solid #fff;
     
     @media screen and (max-width: 360px){
        width: 100%; 
@@ -34,6 +33,7 @@
         margin-left: 2rem;
         h4{
             font-size: 2rem;
+            font-weight: 300;
         }
         .about-text{
             padding: 1rem 0;
@@ -66,12 +66,12 @@
 
 .btn{
     padding: 1rem 2rem;
-    background-color: #FFCC35;
+    background-color: #fff;
     outline: none;
     border: none;
     font-family: inherit;
     font-size: inherit;
-    color: white;
+    color: #111;
     text-transform: uppercase;
     cursor: pointer;
     letter-spacing: 2px;
@@ -107,7 +107,7 @@
 
 .btn-port{
     padding: 1rem 2rem;
-    border: 3px solid #FFCC35;
+    border: 3px solid #fff;
     background-color: transparent;
     outline: none;
     cursor: pointer;
@@ -120,13 +120,13 @@
         margin-right: 1rem;
     }
     &:hover{
-        background-color: #FFCC35;
+        background-color: #fff;
     }
     &:active{
-        background-color: #FFCC35;
+        background-color: #fff;
     }
     &:focus{
-        background-color: #FFCC35;
+        background-color: #fff;
     }
 }
 
