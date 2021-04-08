@@ -1,7 +1,4 @@
 import React from 'react';
-import {faCodepen, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons';
-import {faGithub} from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import TextTyping from '../Components/TextTyping';
 
 function HomePage() {

@@ -2,10 +2,6 @@
     animation: ScalePage .5s  cubic-bezier(.36, .11, .89, .32);
     background-color: #121824;
     border: 1px solid #fff;
-    
-    @media screen and (max-width: 360px){
-       width: 100%; 
-    }
 }
 
 .top{
